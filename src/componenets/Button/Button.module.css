@@ -1,0 +1,15 @@
+.btn {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 15px 0;
+    color: var(--common-color);
+    font-size: 20px;
+    font-weight: 500;
+    background-color: var(--gold-color);
+    border: none;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+}

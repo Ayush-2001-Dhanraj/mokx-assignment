@@ -1,0 +1,77 @@
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.onboardingContainer {
+    background-color: var(--common-color);
+    min-height: 100vh;
+    height: 100%;
+    animation: fadeInAnimation 2s ease backwards;
+}
+
+.banner {
+    height: 304px;
+    background-image: url("../../assets/icons/onboardingBanner.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.nameTag {
+    background-color: var(--nametag-color);
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 8px 30px;
+    font-size: 16px;
+    line-height: 14px;
+    font-weight: 500;
+    color: var(--common-color);
+    letter-spacing: 0.1px;
+    border-radius: 8px;
+}
+
+.journeyContainer {
+    flex: 1;
+    padding: 40px 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: calc(100vh - (304px + 2 * var(--container-pad)));
+}
+
+.tagline {
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.highlight {
+    color: var(--gold-color)
+}
+
+.signupMessage {
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 10px;
+    line-height: 26px;
+}
+
+.existingAcc {
+    font-weight: 400;
+    line-height: 14px;
+    font-size: 20px;
+    color: var(--white-color);
+    text-align: center;
+    margin: 25px auto;
+    cursor: pointer;
+}

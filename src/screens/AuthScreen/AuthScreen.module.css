@@ -1,0 +1,67 @@
+.LoginContainer {
+    padding: var(--container-pad);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: calc(100vh - 2 * var(--container-pad));
+    height: 100%;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mainText {
+    margin-top: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    font-size: 18px;
+    color: var(--common-color);
+    position: relative;
+    z-index: 1000;
+}
+
+.leftHighlight {
+    width: 50px;
+    height: 8px;
+    border-bottom: 8px solid var(--gold-color);
+    position: absolute;
+    bottom: -1px;
+    left: 3px;
+    z-index: -1;
+}
+
+.rightHighlight {
+    width: 50px;
+    height: 8px;
+    border-bottom: 8px solid var(--gold-color);
+    position: absolute;
+    bottom: -1px;
+    right: -7px;
+    z-index: -1;
+}
+
+.info {
+    color: var(--common-color);
+    text-align: center;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    font-size: 14px;
+    margin-top: 19px;
+}
+
+.forgotPas {
+    text-align: center;
+    margin: 25px auto;
+    color: var(--gold-color);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.1px;
+    cursor: pointer;
+}

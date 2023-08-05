@@ -1,0 +1,30 @@
+@keyframes fadeOutAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.splashContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    animation: fadeOutAnimation 5s ease forwards;
+}
+
+.welcomeText {
+    position: absolute;
+    text-align: center;
+    bottom: 92px;
+    right: 0;
+    left: 50%;
+    transform: translate(-50%);
+    color: var(--common-color);
+    font-size: 20px;
+    font-weight: 600;
+}
