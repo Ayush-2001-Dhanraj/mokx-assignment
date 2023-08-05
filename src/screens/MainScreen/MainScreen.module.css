@@ -1,0 +1,214 @@
+.mainScreenContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: calc(100vh);
+    height: 100%;
+}
+
+.header {
+    padding: 20px var(--container-pad);
+    display: flex;
+    align-items: center;
+}
+
+.avatarSection {
+    flex: 1;
+    margin-left: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    position: relative;
+}
+
+.active {
+    position: absolute;
+    background-color: var(--gold-color);
+    bottom: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    right: 0;
+}
+
+.nameSection {
+    margin-left: 10px;
+}
+
+.name {
+    color: var(--common-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.tag {
+    color: var(--tag-color);
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 12px;
+    margin-top: 6px;
+}
+
+.langBtn,
+.backBtn {
+    cursor: pointer;
+}
+
+.chatContainer {
+    flex: 1;
+    background-color: var(--chat-color);
+    padding: 0 var(--container-pad);
+}
+
+.InputContainer {
+    padding: var(--container-pad);
+    background-color: var(--chat-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.input {
+    flex: 1;
+    border: none;
+    box-shadow: 5px 4px 20px 0px rgba(0, 0, 0, 0.13);
+    border-radius: 30px;
+    padding: 20px 22px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.InputActions {
+    position: absolute;
+    right: calc(16px + var(--container-pad));
+    display: flex;
+    width: 48px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.defaultView {
+    margin-top: 16px;
+    position: relative;
+}
+
+.parent {
+    display: flex;
+}
+
+.smgcontainer {
+    display: flex;
+    max-width: 320px;
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.rightSide {
+    justify-content: flex-end;
+}
+
+.today {
+    text-align: center;
+    color: var(--common-color);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    margin: 25px 0;
+
+}
+
+.nameAva {
+    min-width: 40px;
+}
+
+.msg {
+    margin-left: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.12px;
+    box-sizing: border-box;
+    margin-top: 8px;
+    position: relative;
+}
+
+.chatTime {
+    position: absolute;
+    bottom: -20px;
+    font-size: 10px;
+    font-weight: 100;
+    line-height: 10px;
+    right: 0;
+    color: var(--tag-color);
+    width: 50px;
+}
+
+.botMsg {
+    color: var(--white-color);
+    background-color: var(--common-color);
+    padding: 12px 9px 12px;
+    border-radius: 0 8px 8px 8px;
+}
+
+.userMsg {
+    color: var(--white-color);
+    background-color: var(--gold-dark-color);
+    padding: 12px 12px 9px;
+    border-radius: 8px 0 8px 8px;
+}
+
+.chatBotinfoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 43px;
+}
+
+.thunder,
+.caution {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--common-color);
+    font-weight: 400;
+}
+
+.thunder {
+    font-size: 16px;
+    letter-spacing: 0.24px;
+    margin-bottom: 12px;
+}
+
+.caution {
+    font-size: 13px;
+    letter-spacing: 0.195px;
+    margin-top: 25px;
+}
+
+.infoIcon {
+    margin-right: 6px;
+}
+
+.infoText {
+    background-color: var(--gold-dark-color);
+    color: var(--common-color);
+    border-radius: 19px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.18px;
+    padding: 10px 15px;
+    width: 273px;
+    box-sizing: border-box;
+    margin-bottom: 4px;
+}

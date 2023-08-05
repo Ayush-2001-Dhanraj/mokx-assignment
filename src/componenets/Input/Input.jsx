@@ -8,14 +8,16 @@ export default function Input({
   onChange,
   property,
   errors,
+  placeholder,
 }) {
   return (
     <>
       <label className={styles.label}>
-        {label}
+        {label || ""}
         <input
-          type={type}
-          value={value}
+          type={type || "text"}
+          value={value || ""}
+          placeholder={placeholder || ""}
           onChange={(e) => onChange(property, e.target.value)}
           className={styles.input}
           required

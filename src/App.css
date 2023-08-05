@@ -7,11 +7,15 @@
 :root {
     --white-color: #fff;
     --divider-color: #CDD1D0;
+    --chat-color: #f8f8ff;
     --black-color: #000;
     --common-color: #69235B;
     --gold-color: #FFC746;
+    --gold-dark-color: #FBBC04;
     --nametag-color: #CBCBFF;
     --error-color: #ff0000;
+    --chat-text: #A1A1A1;
+    --tag-color: #797C7B;
     --container-pad: 23px;
 }
 
